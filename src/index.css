@@ -11,3 +11,24 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.brandText {
+  font-weight: bold;
+  color: #7ED956;
+}
+.centreBrandBody {
+  height: 100%;
+  display: table;
+  margin: auto;
+}
+.rooterBrand {
+   display: table-cell;
+   vertical-align: middle;
+   margin: auto;
+}
+html {
+  height: 100%;
+  transition: 0.4s;
+}
+.fullWidth {
+  width: 100%;
+}
