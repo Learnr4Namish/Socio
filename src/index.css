@@ -34,5 +34,5 @@ html {
 .fullWidth {
   position:fixed;
   width:100%;
-  overflow
+  overflow:none;
 }
