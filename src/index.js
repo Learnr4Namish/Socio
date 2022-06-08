@@ -47,41 +47,7 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
     function nextEmailAddress() {
       const userName = document.getElementById("socioUserName").value;
       if (userName === "") {
-     function SimpleDialog(props) {
-        const { onClose, selectedValue, open } = props;
-
-  const handleClose = () => {
-    onClose(selectedValue);
-  };
-
-  const handleListItemClick = (value) => {
-    onClose(value);
-  };
-   
-        return (
-          <Dialog onClose={handleClose} open={open}>
-            <DialogTitle>Socio Error!</DialogTitle>
-          </Dialog>
-        );
-      }
-      SimpleDialog.propTypes = {
-        onClose: PropTypes.func.isRequired,
-        open: PropTypes.bool.isRequired,
-        selectedValue: PropTypes.string.isRequired,
-      };
-        const [open, setOpen] = React.useState(false);
-        const [selectedValue, setSelectedValue] = React.useState("dds");
-      
-        const handleClickOpen = () => {
-          setOpen(true);
-        };
-      
-        const handleClose = (value) => {
-          setOpen(false);
-          setSelectedValue(value);
-        };
-      handleClickOpen();
-
+     alert("Invalid Username!");
       }else{
         document.title = "Socio | Login"
         root.render(
