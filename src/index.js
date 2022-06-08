@@ -64,11 +64,12 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
       }
     }
     function nextPassword() {
-      const userEmail = document.getElementById("SocioEmailText");
+      const userEmail = document.getElementById("SocioEmailText").value;
       if (userEmail === "") {
 alert("Please enter a valid email address!");
 } else {
 document.title = "Socio | Login"
+document.getElementById("SocioEmailText").value = "";
         root.render(
       <React.StrictMode>
        <div className='container'>
