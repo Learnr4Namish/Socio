@@ -56,7 +56,7 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
        <Typography style={brandText} id="brandMiddleText">Socio</Typography>
        <p style={normalText}>Welcome to Socio, {userName}</p>
        <TextField style={normalText} id="SocioEmailText" className="fullWidth" label="Your Email Address" type="email"></TextField>
-       <Button style={loginNameBtn} variant='contained' className='fullWidth upMarginLgn' onClick={nextPassword(userName)}>Next</Button>
+       <Button style={loginNameBtn} variant='contained' className='fullWidth upMarginLgn' onClick={nextPassword}>Next</Button>
        </div>
       </React.StrictMode>
         );
