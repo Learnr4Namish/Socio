@@ -49,6 +49,7 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
       if (userName === "") {
      alert("Invalid Username!");
       }else{
+localStorage.setItem("sessionUserName", userName);
         document.title = "Socio | Login"
         root.render(
       <React.StrictMode>
@@ -68,6 +69,7 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
       if (userEmail === "") {
 alert("Please enter a valid email address!");
 } else {
+localStorage.setItem("sessionUserEmail", userEmail);
 document.title = "Socio | Login"
 document.getElementById("SocioEmailText").value = "";
         root.render(
@@ -76,9 +78,21 @@ document.getElementById("SocioEmailText").value = "";
        <Typography style={brandText} id="brandMiddleText">Socio</Typography>
        <p style={normalText}>Dear User, please enter a strong password for your socio account</p>
        <TextField style={normalText} id="SocioPassText" className="fullWidth" label="Your Password" type="password"></TextField>
-       <Button style={loginNameBtn} variant='contained' className='fullWidth upMarginLgn'>Next</Button>
+       <Button style={loginNameBtn} variant='contained' className='fullWidth upMarginLgn' onClick={nextDob}>Next</Button>
        </div>
       </React.StrictMode>
         );
 }
     }
+function nextDob() {
+  const userPassword = document.getElementById("SocioPassText").value;
+  if (userPassword === "") {
+alert("Invalid Username!");
+}else if(userPassword.length < 8) {
+  alert("A Socio password should have a minimum length of 8!");
+}else if (userPassword === "Socio123") {
+  alert("Socio123 is a restricted password!");
+}else{
+ localStorage.setItem("sessionUserPassword", userPassword);
+}
+}
