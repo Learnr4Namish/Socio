@@ -65,9 +65,9 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
     }
     function nextPassword(userName) {
       const userEmail = document.getElementById("SocioEmailText");
-      if (userEmail === ""){
+      if (userEmail === "") {
 alert("Please enter a valid email address!");
-}else{
+} else {
 document.title = "Socio | Login"
         root.render(
       <React.StrictMode>
