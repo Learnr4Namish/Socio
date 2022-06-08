@@ -63,7 +63,7 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
   
       }
     }
-    function nextPassword(userName) {
+    function nextPassword() {
       const userEmail = document.getElementById("SocioEmailText");
       if (userEmail === "") {
 alert("Please enter a valid email address!");
@@ -73,7 +73,7 @@ document.title = "Socio | Login"
       <React.StrictMode>
        <div className='container'>
        <Typography style={brandText} id="brandMiddleText">Socio</Typography>
-       <p style={normalText}>{userName}, please enter a strong password for your socio accounta</p>
+       <p style={normalText}>Dear User, please enter a strong password for your socio account</p>
        <TextField style={normalText} id="SocioPassText" className="fullWidth" label="Your Password" type="password"></TextField>
        <Button style={loginNameBtn} variant='contained' className='fullWidth upMarginLgn'>Next</Button>
        </div>
