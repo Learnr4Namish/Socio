@@ -75,7 +75,7 @@ document.title = "Socio | Login"
        <Typography style={brandText} id="brandMiddleText">Socio</Typography>
        <p style={normalText}>{userName}, please enter a strong password for your socio accounta</p>
        <TextField style={normalText} id="SocioPassText" className="fullWidth" label="Your Password" type="password"></TextField>
-       <Button style={loginNameBtn} variant='contained' className='fullWidth upMarginLgn'q>Next</Button>
+       <Button style={loginNameBtn} variant='contained' className='fullWidth upMarginLgn'>Next</Button>
        </div>
       </React.StrictMode>
         );
