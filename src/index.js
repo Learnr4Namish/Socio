@@ -94,5 +94,25 @@ alert("Invalid Username!");
   alert("Socio123 is a restricted password!");
 }else{
  localStorage.setItem("sessionUserPassword", userPassword);
+document.getElementById("SocioPassText").value = "";
+        root.render(
+      <React.StrictMode>
+       <div className='container'>
+       <Typography style={brandText} id="brandMiddleText">Socio</Typography>
+       <p style={normalText}>When were you born? Please notice that you must be of atleast<b>18 years</b> of age.</p>
+       <label for="months">Choose your month:</label>
+<select name="months" id="dobMonths">
+  <option value="january">January</option>
+  <option value="february">February</option>
+  <option value="march">March</option>
+  <option value="april">April</option>
+  <option value="may">May</option>
+  <option value="june">June</option>
+  <option value="july">July</option>
+</select>
+       <Button style={loginNameBtn} variant='contained' className='fullWidth upMarginLgn' onClick={nextDob}>Next</Button>
+       </div>
+      </React.StrictMode>
+        );
 }
 }
