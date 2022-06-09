@@ -25,8 +25,9 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
     <Typography style={brandText} id="brandMiddleText">Socio</Typography>
     <p style={normalText} variant='p'>Socio helps you to connect with people all over the world. Socio can also be used for Educational and Entertainment purposes. Let's create your socio account if you are new to socio. Please chose the appropiate option for you:-</p>
      <br></br>
-     <Button style={normalButton} onClick={newUserlogin}>I'm New to Socio</Button>
-     <Button style={normalButton}>I'm an existing user</Button>
+     <B
+<button style={normalButton} onClick={newUserlogin}>I'm New to Socio</button>
+     <button style={normalButton}>I'm an existing user</button>
   </div>
         </React.StrictMode>
           );
