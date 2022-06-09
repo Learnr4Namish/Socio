@@ -28,7 +28,7 @@ export const normalButton = {
     color:brandColor,
     borderRadius:"360px",
     backgroundColor:"#ffffff",
-    padding:"18px",
+    padding:"14.5px",
     fontWeight:"bold",
     outline:"none",
 };
@@ -43,7 +43,7 @@ export const loginNameBtn = {
     color:brandColor,
     borderRadius:"360px",
     backgroundColor:"#ffffff",
-    padding:"18px",
+    padding:"14.5px",
     fontWeight:"bold",
     outline:"none",
 }
