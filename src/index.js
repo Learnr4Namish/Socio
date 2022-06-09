@@ -100,7 +100,7 @@ document.getElementById("SocioPassText").value = "";
        <div className='container'>
        <Typography style={brandText} id="brandMiddleText">Socio</Typography>
        <p style={normalText}>When were you born? Please notice that you must be of atleast <b>18 years</b> of age.</p>
-       <p style={normal text}>Choose your DOB month:</p>
+       <p style={normalText}>Choose your DOB month:</p>
 <select name="months" id="dobMonths" className="selectPicker">
   <option value="january">January</option>
   <option value="february">February</option>
