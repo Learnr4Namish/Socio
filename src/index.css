@@ -33,7 +33,9 @@ html {
 }
 .fullWidth {
   position:fixed;
-  width:100%;
+  width:50%;
+  text-align:center;
+  align-self:center;
   overflow:none;
   margin-right:8px;
 }
