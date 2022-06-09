@@ -159,7 +159,7 @@ const renderDobYears = document.getElementById("dobYears");
 const thisYearGet = new Date().getFullYear();
 const hundredYearsBack= Number(thisYearGet) - 100;
 console.log(hundredYearsBack);
-for (let i = hundredYearsBack; i <= Number(thisYearGet); i++) {
+for (let i = Number(hundredYearsBack); i <= Number(thisYearGet); i++) {
  renderDobYears.innerHTML += "<option value='" + i + "'>" + i + "</option>";
 }
 }
