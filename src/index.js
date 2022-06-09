@@ -99,9 +99,9 @@ document.getElementById("SocioPassText").value = "";
       <React.StrictMode>
        <div className='container'>
        <Typography style={brandText} id="brandMiddleText">Socio</Typography>
-       <p style={normalText}>When were you born? Please notice that you must be of atleast<b>18 years</b> of age.</p>
-       <label for="months">Choose your month:</label>
-<select name="months" id="dobMonths">
+       <p style={normalText}>When were you born? Please notice that you must be of atleast <b>18 years</b> of age.</p>
+       <p style={normal text}>Choose your DOB month:</p>
+<select name="months" id="dobMonths" className="selectPicker">
   <option value="january">January</option>
   <option value="february">February</option>
   <option value="march">March</option>
@@ -109,6 +109,11 @@ document.getElementById("SocioPassText").value = "";
   <option value="may">May</option>
   <option value="june">June</option>
   <option value="july">July</option>
+  <option value="august">August</option>
+  <option value="september">September</option>
+<option value="october">October</option>
+<option value="november">November</option>
+<option value="december">December</option>
 </select>
        <Button style={loginNameBtn} variant='contained' className='fullWidth upMarginLgn' onClick={nextDob}>Next</Button>
        </div>
