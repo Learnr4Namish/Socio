@@ -22,18 +22,24 @@ export const normalButton = {
     marginRight:"8px",
     transform:"translateY(-5px)",
     fontSize:"16px",
+    border:"none",
+    borderRadius:"360px"
     backgroundColor:brandColor,
     color:"white",
     padding:"10px",
-    fontWeight:"bold"
+    fontWeight:"bold",
+    outline:"none",
 };
 export const loginNameBtn = {
     marginLeft:"8px",
     marginRight:"8px",
     marginTop:"10px",
     fontSize:"16px",
+    border:"none",
+    borderRadius:"360px"
     backgroundColor:brandColor,
     color:"white",
     padding:"10px",
-    fontWeight:"bold"
+    fontWeight:"bold",
+    outline:"none",
 }
