@@ -12,13 +12,14 @@ export const brandText = {
     transition: "0.4s"
 };
 export const normalText = {
-   margin:"8px",
+   margin:'8px',
     fontSize:'18px',
     padding:"0px",
     fontWeight:"400"
 }
 export const normalButton = {
     marginLeft:"8px",
+    marginRight:"8px",
     transform:"translateY(-5px)",
     fontSize:"16px",
     backgroundColor:brandColor,
@@ -28,6 +29,7 @@ export const normalButton = {
 };
 export const loginNameBtn = {
     marginLeft:"8px",
+    marginRight:"8px",
     marginTop:"10px",
     fontSize:"16px",
     backgroundColor:brandColor,
