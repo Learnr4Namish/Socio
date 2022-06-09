@@ -39,7 +39,7 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
      <div className='container'>
      <Typography style={brandText} id="brandMiddleText">Socio</Typography>
      <TextField style={normalText} className="fullWidth" id='socioUserName' label="Your Name"></TextField>
-     <Button style={loginNameBtn} variant='contained' className='fullWidth upMarginLgn' onClick={nextEmailAddress}>Next</Button>
+     <button style={loginNameBtn} variant='contained' className='fullWidth upMarginLgn' onClick={nextEmailAddress}>Next</button>
      </div>
     </React.StrictMode>
       );
@@ -57,7 +57,7 @@ localStorage.setItem("sessionUserName", userName);
        <Typography style={brandText} id="brandMiddleText">Socio</Typography>
        <p style={normalText}>Welcome to Socio, {userName}</p>
        <TextField style={normalText} id="SocioEmailText" className="fullWidth" label="Your Email Address" type="email"></TextField>
-       <Button style={loginNameBtn} variant='contained' className='fullWidth upMarginLgn' onClick={nextPassword}>Next</Button>
+       <button style={loginNameBtn} variant='contained' className='fullWidth upMarginLgn' onClick={nextPassword}>Next</button>
        </div>
       </React.StrictMode>
         );
@@ -78,7 +78,7 @@ document.getElementById("SocioEmailText").value = "";
        <Typography style={brandText} id="brandMiddleText">Socio</Typography>
        <p style={normalText}>Dear User, please enter a strong password for your socio account</p>
        <TextField style={normalText} id="SocioPassText" className="fullWidth" label="Your Password" type="password"></TextField>
-       <Button style={loginNameBtn} variant='contained' className='fullWidth upMarginLgn' onClick={nextDob}>Next</Button>
+       <button style={loginNameBtn} variant='contained' className='fullWidth upMarginLgn' onClick={nextDob}>Next</button>
        </div>
       </React.StrictMode>
         );
@@ -151,7 +151,7 @@ document.getElementById("SocioPassText").value = "";
 </select>
 <p style={normalText}>Choose your DOB year:</p>
 <select name="years" id="dobYears" className="selectPicker"></select>
-       <Button style={loginNameBtn} variant='contained' className='fullWidth upMarginLgn' onClick={nextDob}>Next</Button>
+       <button style={loginNameBtn} variant='contained' className='fullWidth upMarginLgn' onClick={nextDob}>Next</button>
        </div>
       </React.StrictMode>
         );
