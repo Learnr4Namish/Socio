@@ -146,7 +146,7 @@ document.getElementById("SocioPassText").value = "";
   <option value={27}>27</option>
   <option value={28}>28</option>
   <div id="leapyear"><option value={29}>29</option></div>
-  <div id="februaryRe"<option value={30}>30</option></div>
+  <div id="februaryRe"><option value={30}>30</option></div>
   <div id="monthEnder"><option value={31}>31</option></div>
 </select>
 
