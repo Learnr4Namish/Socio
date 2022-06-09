@@ -23,7 +23,7 @@ export const normalButton = {
     transform:"translateY(-5px)",
     fontSize:"16px",
     border:"none",
-    borderRadius:"360px"
+    borderRadius:"360px",
     backgroundColor:brandColor,
     color:"white",
     padding:"10px",
@@ -36,7 +36,7 @@ export const loginNameBtn = {
     marginTop:"10px",
     fontSize:"16px",
     border:"none",
-    borderRadius:"360px"
+    borderRadius:"360px",
     backgroundColor:brandColor,
     color:"white",
     padding:"10px",
