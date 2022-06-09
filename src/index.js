@@ -149,6 +149,7 @@ document.getElementById("SocioPassText").value = "";
   <option value={30}>30</option>
   <option value={31}>31</option>
 </select>
+<p style={normalText}>Choose your DOB year:</p>
 <select name="years" id="dobYears" className="selectPicker"></select>
        <Button style={loginNameBtn} variant='contained' className='fullWidth upMarginLgn' onClick={nextDob}>Next</Button>
        </div>
@@ -156,9 +157,9 @@ document.getElementById("SocioPassText").value = "";
         );
 const renderDobYears = document.getElementById("dobYears");
 const thisYearGet = new Date().getFullYear();
-const hundredYearsBack= thisYearGet - 100;
+const hundredYearsBack= Number(thisYearGet) - 100;
 console.log(hundredYearsBack);
-for (let i = hundredYearsBack; i <= thisYearGet; i++) {
+for (let i = hundredYearsBack; i <= Number(thisYearGet); i++) {
  renderDobYears.innerHTML += "<option value='" + i + "'>" + i + "</option>";
 }
 }
