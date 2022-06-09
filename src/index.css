@@ -36,3 +36,11 @@ html {
   width:100%;
   overflow:none;
 }
+.selectPicker {
+ width:100%;
+ outline:none;
+ border:none;
+ border-color:black;
+ font-size:16px;
+ border-style:solid;
+}
