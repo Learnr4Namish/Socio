@@ -101,7 +101,7 @@ document.getElementById("SocioPassText").value = "";
        <Typography style={brandText} id="brandMiddleText">Socio</Typography>
        <p style={normalText}>When were you born? Please notice that you must be of atleast <b>18 years</b> of age.</p>
        <p style={normalText}>Choose your DOB month:</p>
-<select name="months" id="dobMonths" className="selectPicker">
+<select name="months" id="dobMonths" onChange={changeDobDays} className="selectPicker">
   <option value="january">January</option>
   <option value="february">February</option>
   <option value="march">March</option>
@@ -145,14 +145,28 @@ document.getElementById("SocioPassText").value = "";
   <option value={26}>26</option>
   <option value={27}>27</option>
   <option value={28}>28</option>
-  <div id="leapyear"><option value={29}>29</option></div>
-  <div id="februaryRe"><option value={30}>30</option></div>
-  <div id="monthEnder"><option value={31}>31</option></div>
+  <option value={29}>29</option>
+  <option value={30}>30</option>
+  <option value={31}>31</option>
 </select>
-
+<select name="years" id="dobYears" className="selectPicker"></select>
        <Button style={loginNameBtn} variant='contained' className='fullWidth upMarginLgn' onClick={nextDob}>Next</Button>
        </div>
       </React.StrictMode>
         );
+const renderDobYears = document.getElementById("dobYears");
+const thisYearGet = new Date().getFullYear();
+const hundredYearsBack= thisYearGet - 100;
+console.log(hundredYearsBack);
+for (let i = hundredYearsBack; i <= thisYearGet; i++) {
+ renderDobYears.innerHTML += "<option value='" + i + "'>" + i + "</option>";
+}
+}
+}
+function changeDobDays() {
+  const targetSelectorMonth = document.getElementById("dobMonths");
+  const targetSelectorDay = document.getElementById("dobDays");
+ if(targetSelectorMonth.selectedIndex === 2) {
+  targetSelectorDay.remove(30);
 }
 }
