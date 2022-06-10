@@ -112,7 +112,7 @@ function nextProfession() {
   const minAge = 18;
   const maxAge = 150;
   const today = new Date();
-  givenDate = new Date(today);
+  const givenDate = new Date(today);
         var birthDate = new Date(userDob);
         var years = (givenDate.getFullYear() - birthDate.getFullYear());
 
@@ -166,6 +166,6 @@ function nextProf() {
         );
 }
 }
-function createSocioAccount() {
+function socioCreateAccount() {
 
 }
