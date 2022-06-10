@@ -77,7 +77,7 @@ document.getElementById("SocioEmailText").value = "";
        <div className='container'>
        <Typography style={brandText} id="brandMiddleText">Socio</Typography>
        <p style={normalText}>Dear User, please enter a strong password for your socio account</p>
-       <TextField style={normalText} id="SocioPassText" className="fullWidth" label="Your Password" type="password"></TextField>
+<TextField className="fullWidth" style={normalText} label="Your Password" type="password"></TextField>
        <button style={loginNameBtn} variant='contained' className='fullWidth upMarginLgn' onClick={nextDob}>Next</button>
        </div>
       </React.StrictMode>
@@ -100,11 +100,10 @@ document.getElementById("SocioPassText").value = "";
        <div className='container'>
        <Typography style={brandText} id="brandMiddleText">Socio</Typography>
        <p style={normalText}>When were you born? Please notice that you must be of atleast <b>18 years</b> of age.</p>
-      
+      <TextField className="fullWidth" style={normalText} label="Date of Birth" type="date"></TextField>
        <button style={loginNameBtn} variant='contained' className='fullWidth upMarginLgn' onClick={nextDob}>Next</button>
        </div>
       </React.StrictMode>
         );
 }
-}
-}
+
