@@ -78,13 +78,13 @@ document.getElementById("SocioEmailText").value = "";
        <Typography style={brandText} id="brandMiddleText">Socio</Typography>
        <p style={normalText}>Dear User, please enter a strong password for your socio account</p>
 <TextField id="SocioPassText" className="fullWidth" style={normalText} label="Your Password" type="password"></TextField>
-       <button style={loginNameBtn} variant='contained' className='fullWidth upMarginLgn' onClick={nextDobSocio}>Next</button>
+       <button style={loginNameBtn} variant='contained' className='fullWidth upMarginLgn' onClick={nextDob}>Next</button>
        </div>
       </React.StrictMode>
         );
 }
     }
-function nextDobSocio() {
+function nextDob() {
   const userPassword = document.getElementById("SocioPassText").value;
   if (userPassword === "") {
 alert("Invalid Username!");
