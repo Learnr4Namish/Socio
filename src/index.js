@@ -156,9 +156,9 @@ function nextProf() {
        <Typography style={brandText} id="brandMiddleText">Socio</Typography>
        <p style={normalText}>Where do you reside?</p>
 <TextField id="SocioAddrCountryText" className="fullWidth" style={normalText} label="Your Country" type="text"></TextField>
-<br>
+<br></br>
 <TextField id="SocioAddrStateText" className="fullWidth" style={normalText} label="Your State" type="text"></TextField>
-<br>
+<br></br>
 <TextField id="SocioAddrCityText" className="fullWidth" style={normalText} label="Your City" type="text"></TextField>
        <button style={loginNameBtn} variant='contained' className='fullWidth upMarginLgn' onClick={socioCreateAccount}>Next</button>
        </div>
