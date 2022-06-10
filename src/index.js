@@ -77,19 +77,19 @@ document.getElementById("SocioEmailText").value = "";
        <div className='container'>
        <Typography style={brandText} id="brandMiddleText">Socio</Typography>
        <p style={normalText}>Dear User, please enter a strong password for your socio account</p>
-<TextField className="fullWidth" style={normalText} label="Your Password" type="password"></TextField>
-       <button style={loginNameBtn} variant='contained' className='fullWidth upMarginLgn' onClick={nextDob}>Next</button>
+<TextField id="SocioPassText" className="fullWidth" style={normalText} label="Your Password" type="password"></TextField>
+       <button style={loginNameBtn} variant='contained' className='fullWidth upMarginLgn' onClick={nextDobSocio}>Next</button>
        </div>
       </React.StrictMode>
         );
 }
     }
-function nextDob() {
+function nextDobSocio() {
   const userPassword = document.getElementById("SocioPassText").value;
   if (userPassword === "") {
 alert("Invalid Username!");
-}else if(userPassword.length < 8) {
-  alert("A Socio password should have a minimum length of 8!");
+}else if(userPassword.length < 10) {
+  alert("A Socio password should have a minimum length of 10 for better security!");
 }else if (userPassword === "Socio123") {
   alert("Socio123 is a restricted password!");
 }else{
@@ -100,7 +100,7 @@ document.getElementById("SocioPassText").value = "";
        <div className='container'>
        <Typography style={brandText} id="brandMiddleText">Socio</Typography>
        <p style={normalText}>When were you born? Please notice that you must be of atleast <b>18 years</b> of age.</p>
-      <TextField className="fullWidth" style={normalText} label="Date of Birth" type="date"></TextField>
+      <TextField id="SocioBirthText" className="fullWidth" style={normalText} label="Date of Birth" type="date"></TextField>
        <button style={loginNameBtn} variant='contained' className='fullWidth upMarginLgn' onClick={nextDob}>Next</button>
        </div>
       </React.StrictMode>
