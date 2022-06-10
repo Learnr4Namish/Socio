@@ -106,4 +106,4 @@ document.getElementById("SocioPassText").value = "";
       </React.StrictMode>
         );
 }
-
+}
