@@ -101,9 +101,69 @@ document.getElementById("SocioPassText").value = "";
        <Typography style={brandText} id="brandMiddleText">Socio</Typography>
        <p style={normalText}>When were you born? Please notice that you must be of atleast <b>18 years</b> of age.</p>
       <TextField id="SocioBirthText" className="fullWidth" style={normalText} label="Date of Birth" type="date"></TextField>
-       <button style={loginNameBtn} variant='contained' className='fullWidth upMarginLgn' onClick={nextDob}>Next</button>
+       <button style={loginNameBtn} variant='contained' className='fullWidth upMarginLgn' onClick={nextProfession}>Next</button>
        </div>
       </React.StrictMode>
         );
 }
+}
+function nextProfession() {
+  const userDob = document.getElementById("SocioBirthText").value;
+  const minAge = 18;
+  const maxAge = 150;
+  const today = new Date();
+  givenDate = new Date(today);
+        var birthDate = new Date(userDob);
+        var years = (givenDate.getFullYear() - birthDate.getFullYear());
+
+        if (givenDate.getMonth() < birthDate.getMonth() ||
+     givenDate.getMonth() == birthDate.getMonth() && givenDate.getDate() < birthDate.getDate()) {
+            years--;
+        }
+
+  if(String(userDob) === "") {
+  alert("Please choose a valid date!");
+}else if(years < minAge) {
+  alert("You must be atleast of 18 years to use Socio!");
+}else if(years > maxAge) {
+  alert("You can't be greater than 150 years to use Socio!");
+}else{
+  localStorage.setItem("sessionUserDob", userDob);
+  document.title = "Socio | Login";
+  document.getElementById("SocioBirthText").value = "";
+  root.render(
+      <React.StrictMode>
+       <div className='container'>
+       <Typography style={brandText} id="brandMiddleText">Socio</Typography>
+       <p style={normalText}>What is your profession?</p>
+<TextField id="SocioProfText" className="fullWidth" style={normalText} label="Your Profession" type="text"></TextField>
+       <button style={loginNameBtn} variant='contained' className='fullWidth upMarginLgn' onClick={nextProf}>Next</button>
+       </div>
+      </React.StrictMode>
+        );
+}
+}
+function nextProf() {
+  const userProfession = document.getElementById("SocioProfText").value;
+  if(userProfession == "") {
+   alert("Invalid Profession");
+}else{
+  localStorage.setItem("sessionUserProfession", userProfession);
+  document.getElementById("SocioProfText").value = "";
+  root.render(
+      <React.StrictMode>
+       <div className='container'>
+       <Typography style={brandText} id="brandMiddleText">Socio</Typography>
+       <p style={normalText}>Where do you reside?</p>
+<TextField id="SocioAddrCountryText" className="fullWidth" style={normalText} label="Your Country" type="text"></TextField>
+<TextField id="SocioAddrStateText" className="fullWidth" style={normalText} label="Your State" type="text"></TextField>
+<TextField id="SocioAddrCityText" className="fullWidth" style={normalText} label="Your City" type="text"></TextField>
+       <button style={loginNameBtn} variant='contained' className='fullWidth upMarginLgn' onClick={socioCreateAccount}>Next</button>
+       </div>
+      </React.StrictMode>
+        );
+}
+}
+function createSocioAccount() {
+
 }
